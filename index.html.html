@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rahul Rampally | Data Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#020617;color:#e2e8f0;overflow-x:hidden}
+
+/* animated gradient bg */
+body::before{
+content:"";
+position:fixed;
+width:200%;height:200%;
+background:radial-gradient(circle at 20% 20%, #0ea5e9, transparent 40%),
+radial-gradient(circle at 80% 80%, #6366f1, transparent 40%);
+animation:moveBg 15s infinite alternate;
+z-index:-1;opacity:0.15;
+}
+@keyframes moveBg{
+0%{transform:translate(0,0)}
+100%{transform:translate(-20%,-20%)}
+}
+
+header{
+display:flex;justify-content:space-between;align-items:center;
+padding:25px 60px;position:sticky;top:0;
+backdrop-filter:blur(10px);
+background:rgba(2,6,23,0.6);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+header h1{font-weight:800;color:#38bdf8}
+nav a{margin-left:25px;color:#cbd5f5;transition:.3s}
+nav a:hover{color:#38bdf8}
+
+.hero{
+display:flex;align-items:center;justify-content:space-between;
+padding:100px 60px;flex-wrap:wrap;
+}
+.hero-text{max-width:650px}
+.hero h2{
+font-size:54px;font-weight:800;
+background:linear-gradient(90deg,#38bdf8,#6366f1);
+-webkit-background-clip:text;
+color:transparent;
+}
+.hero p{margin:20px 0;font-size:18px;color:#94a3b8}
+
+.btn{
+padding:12px 22px;border-radius:12px;
+background:linear-gradient(135deg,#38bdf8,#6366f1);
+color:white;font-weight:600;margin-right:12px;
+transition:.3s;display:inline-block;
+}
+.btn:hover{transform:translateY(-3px) scale(1.05)}
+
+.profile-img{
+width:240px;border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+
+.section{padding:80px 60px}
+.section h2{font-size:32px;margin-bottom:30px;color:#38bdf8}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+padding:25px;border-radius:20px;
+background:rgba(15,23,42,0.6);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.05);
+transition:.4s;
+}
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 20px 50px rgba(0,0,0,0.6);
+}
+
+.timeline{
+border-left:2px solid #334155;
+padding-left:20px;
+}
+.timeline-item{
+margin-bottom:30px;position:relative;
+}
+.timeline-item::before{
+content:"";position:absolute;left:-30px;top:5px;
+width:12px;height:12px;border-radius:50%;
+background:#38bdf8;
+}
+
+footer{text-align:center;padding:30px;color:#64748b}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Rahul</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h2>Data Engineer.
+<br/>CI/CD Specialist.
+<br/>Automation Builder.</h2>
+<p>10+ years building scalable data systems in Banking. Expert in Teradata, ETL pipelines, and modern DevOps automation.</p>
+<a class="btn" href="https://github.com/rahulrampally" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/rahulrampally/" target="_blank">LinkedIn</a>
+</div>
+<img src="https://via.placeholder.com/300x320" class="profile-img" />
+</section>
+
+<section class="section" id="about">
+<h2>About</h2>
+<div class="card">
+<p>I’m Rahul Rampally, a Senior Data Engineer based in Sydney. I specialize in building enterprise-scale data pipelines, CI/CD automation, and solving complex data problems in banking systems like CBA.</p>
+</div>
+</section>
+
+<section class="section" id="experience">
+<h2>Experience</h2>
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Accenture Australia</h3>
+<p>Senior System Engineer / Technical BA (2022 - Present)</p>
+</div>
+
+<div class="timeline-item">
+<h3>HCL Australia</h3>
+<p>Software Engineer (2018 - 2021)</p>
+</div>
+
+<div class="timeline-item">
+<h3>HCL India</h3>
+<p>Software Engineer (2015 - 2018)</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="projects">
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Customer Banking Core</h3>
+<p>Next-gen banking platform (CBA)</p>
+<a href="https://github.com/rahulrampally" target="_blank">View →</a>
+</div>
+
+<div class="card">
+<h3>Project Infinity</h3>
+<p>Secure Data Exchange & Migration</p>
+<a href="https://github.com/rahulrampally" target="_blank">View →</a>
+</div>
+
+<div class="card">
+<h3>Teradata Upgrade</h3>
+<p>Zero downtime shadow migration</p>
+<a href="https://github.com/rahulrampally" target="_blank">View →</a>
+</div>
+
+<div class="card">
+<h3>Tableau Dashboards</h3>
+<p>Business intelligence reporting</p>
+<a href="https://github.com/rahulrampally" target="_blank">View →</a>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: rahulrampally@gmail.com</p>
+<p>Phone: +61-46935300</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Rahul Rampally</p>
+</footer>
+
+</body>
+</html>
